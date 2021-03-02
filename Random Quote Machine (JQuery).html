@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+								<!-- CSS link... -->
+		<link rel = "stylesheet" href = "Random Quote Machine.css"/>
+		<title>Random Quote Machine(JQuery)</title>
+		
+		<!-- Includes Font Awesome for bootstrap. Can be used for any app using this 
+			code -->
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+		crossorigin="anonymous">
+			
+		<!-- Animate.css Library for cross-browser animations with CSS 
+	    (link for all of the cool things this library offers https://animate.style)-->
+		<link rel="stylesheet"
+  		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  		
+	</head>
+	
+	<body>
+		<div id="wrapper"> <!-- contains quote box and footer-->
+			<div id="quote-box-container">
+				<div id="quote-box">
+					<div id="text-container"><i class="fas fa-quote-left"></i>
+						<span id="text"></span>
+						<i class="fas fa-quote-right"></i>
+
+						<p id="quote-author">-<span id="author"></span></p>
+					</div>
+					<div class="buttons-container">
+						<a id="tweet-quote" class="button" title="tweet this quote!" 
+						href='https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<button id="new-quote-button" class="button">Proper Quote</button>
+						<button id ="Hunter-quote-button" class= "button">Hunter Quote</button>
+					</div>
+				</div>
+			</div>
+			<div id="footer">By<a id="footer-link" href="https://codepen.io/your-work" target="_blank"> Hunter Lacefield</a></div>
+		</div>
+
+	</body>
+	<script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+
+	<!-- added these two to be able to change colors using jQuery... -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+	
+	<!-- Must use your JS file after connecting to jQuery... -->
+	<script src = "Random Quote Machine.js"></script>
+</html>

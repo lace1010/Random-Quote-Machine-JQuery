@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(35, 35, 92);
+  color: rgb(35, 35, 92);
+  display: flex;
+  justify-content: center; /*horizontal alignment when using flex*/
+  align-items: center; /*vertical alignment when using flex*/
+  height: 100vh; /*Need this to center vertically because it makes the height of the body the 
+                     viewport height and centers in the middle of said height. 
+                     Also, neeeds to be auto as quote length will vary and needs to be able to adjust to different quotes*/
+}
+
+#quote-box-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px black;
+  width: 50vw; /*50% of viewport width*/
+  /*Don't use height as it is auto based off content inside. This makes it padding up top and bottom of container the same to make it look even.
+    If we add height that's not auto it would be extremely difficult to make even.*/
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#text-container {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+#quote-author {
+  width: 50vw; /*needs to be the same as quote-box*/
+  text-align: right; /*can use instead of float: right because simply an inline element.*/
+  font-size: 1rem;
+}
+
+.buttons-container {
+  margin-top: 20px;
+  width: 50vw; /*needs to be the same as quote-box*/
+}
+
+.button {
+  background-color: rgb(35, 35, 92);
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  height: 30px;
+  border-radius: 4px;
+  border: none; /*gets rid of button border*/
+}
+
+#Hunter-quote-button {
+  font-size: 0.8rem;
+  float: right;
+}
+
+#new-quote-button {
+  font-size: 0.8rem;
+  float: right;
+  background-color: rgb(35, 35, 92);
+}
+
+#tweet-quote {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  text-decoration: none;
+}
+
+#footer {
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+#footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-link:hover {
+  color: blue;
+}
